@@ -33,7 +33,11 @@ const ListCharacters = (props: Props) => {
         <CircularProgress color='warning' />
       ) : (
         filteredCharacters?.map((character: People) => (
-          <CharacterCard character={character} films={films} />
+          <CharacterCard
+            key={character?.name}
+            character={character}
+            films={films}
+          />
         ))
       )}
     </div>

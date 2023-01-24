@@ -1,0 +1,84 @@
+@import '../../../styles/colors/index.css';
+
+.container-form {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column wrap;
+  background-color: var(--light-blue);
+  border-radius: 24px;
+}
+
+.container-form .container-inputs {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.container-form label {
+  width: 100%;
+  color: var(--light-grey);
+}
+
+.container-form label span {
+  color: var(--red-error);
+}
+
+.container-form select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.container-form .container-inputs input {
+  border-radius: 8px;
+  padding: 5px;
+}
+
+@media (min-width: 570px) {
+  .container-form {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: var(--light-blue);
+    border-radius: 24px;
+  }
+
+  .container-form .container-inputs {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 5%;
+  }
+
+  .container-form label {
+    width: 40%;
+    color: var(--light-grey);
+    margin-right: 20px;
+  }
+
+  .container-form label span {
+    color: var(--red-error);
+  }
+
+  .container-form .container-inputs input {
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .container-form select {
+    width: 50%;
+    padding: 5px;
+    border-radius: 8px;
+  }
+}
