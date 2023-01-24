@@ -1,0 +1,15 @@
+@import '../../../styles/colors/index.css';
+
+.container-search {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  padding: 2em 0;
+}
+
+.container-search .error-search {
+  color: var(--red-error);
+}

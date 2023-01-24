@@ -1,0 +1,74 @@
+@import '../../../styles/colors/index.css';
+
+.container-cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2em auto;
+  gap: 30px;
+  justify-content: center;
+}
+
+.container-cards .MuiPaper-root {
+  width: 100%;
+  height: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  padding: 0.5em 0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px -3px rgb(214, 213, 214);
+  -moz-box-shadow: 0px 0px 10px -3px rgb(214, 213, 214);
+  box-shadow: 0px 0px 10px -3px rgb(214, 213, 214);
+  background-color: var(--light-blue);
+}
+
+.container-cards .MuiPaper-root .MuiTypography-root.title-name-character {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.container-cards .MuiCollapse-root {
+  text-align: left;
+  font-size: 12px;
+  min-height: 230px !important;
+  max-height: 230px;
+}
+
+.container-cards .container-delete-button {
+  margin-top: 20px;
+  padding: 0 5px;
+}
+
+@media (min-width: 570px) {
+  .container-cards .MuiPaper-root {
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    max-width: 200px;
+    padding: 0.5em 0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px -3px rgb(214, 213, 214);
+    -moz-box-shadow: 0px 0px 10px -3px rgb(214, 213, 214);
+    box-shadow: 0px 0px 10px -3px rgb(214, 213, 214);
+    background-color: var(--light-blue);
+  }
+
+  .container-cards .MuiPaper-root .MuiTypography-root.title-name-character {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .container-cards .MuiCollapse-root {
+    text-align: left;
+    font-size: 12px;
+    min-height: 220px !important;
+    max-height: 220px;
+  }
+}
