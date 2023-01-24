@@ -1,3 +1,4 @@
+import { FieldValues } from 'react-hook-form/dist/types';
 import { Api } from '../../api';
 import { Dispatch } from '../index';
 import { People } from '../interfaces/interfaces';
@@ -136,5 +137,14 @@ export const handlePagination = (page: string) => {
     } catch (error) {
       console.log(error);
     }
+  };
+};
+
+export const newCharacter = (character: FieldValues) => {
+  return async (dispatch: Dispatch) => {
+    dispatch({
+      type: 'characters/setNewCharacter',
+      payload: character,
+    });
   };
 };

@@ -21,8 +21,6 @@ const PaginationComp = (props: Props) => {
     dispatch(handlePagination(value?.toString()));
   };
 
-  console.log(window.innerWidth);
-
   return (
     <div className='container-pagination'>
       <Stack spacing={2}>

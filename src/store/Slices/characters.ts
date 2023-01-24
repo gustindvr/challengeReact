@@ -30,6 +30,10 @@ export const charactersSlices = createSlice({
       state.characters = action.payload;
     },
 
+    setNewCharacter: (state, action) => {
+      state.characters = [...state.characters, action.payload];
+    },
+
     setTotal: (state, action) => {
       state.total = action.payload;
     },
